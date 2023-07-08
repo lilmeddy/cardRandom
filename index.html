@@ -8,7 +8,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <main>
+        <div class="contain">
+          <h1>Airtime <span style="color: yellow">Generator</span></h1>
+          <select name="" id="myNetwork">
+            <option value="">Choose Airtime Type</option>
+            <option value="mtn">MTN</option>
+            <option value="glo">GLO</option>
+            <option value="airtel">AIRTEL</option>
+            <option value="mobile">9MOBILE</option>
+          </select>
+          <select name="" id="myAmount" style="margin-bottom: 20px">
+            <option value="">Choose Airtime Price</option>
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="500">500</option>
+            <option value="1000">1000</option>
+          </select>
+          <h2 id="number">Airtime Number</h2>
+          <button onclick="myGen()" class="gen">Generate Airtime</button>
+          <div style="width: 70%; margin: auto">
+            <input id="myLoad" type="text" />
+          </div>
+          <button onclick="load()" class="load">Load Card</button>
+        </div>
+      </main>
 </body>
 </html>
 <script src="script.js"></script>
